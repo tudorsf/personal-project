@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Tudor - PersonalWebsite</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="css/personal.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/personal.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('service_kyzxknk');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_number', 'contact-form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+
+	<header class="header">
+		<nav class="nav">
+			<menu class="menu" id="mainMenu" data-menuIsVisible="false">
+				<a href="#about">About Me</a>
+				<a href="#projects">Projects</a>
+				<a href="#process">Skills</a>
+				<a href="#exp">Experience</a>
+				<a href="#exp">Works</a>
+				<a href="#contacts">Contact</a>
+			</menu>
+			<nav class="" id="mainNav" data-scrolled="false">
+				<div class="container">
+					<div class="row row_jc-sp-bn row_header">
+					
+						<button class="button button_burger" id="buttonBurger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div><!-- end row -->
+				</div><!-- end container -->
+			</nav><!-- end main-nav -->
+		</nav><!-- end nav -->
+		<div class="column colum_header">
+			<h1 class="title title_header">Tudor Sfarasan</h1>
+			<p class="subtitle subtitle_header">
+				#Web Development  #Creative  #Design
+			</p>
+		</div><!-- end column -->
+	</header>
+
+	<main class="content">
+		<!-- about me -->
+		<div class="page about" id="about">
+			<div class="container">
+				<div class="row row_jc-sp-bn">
+					<img src="img/aboutMe/myPhoto.png" width="440px"
+							height="583px" alt="i">
+					<div class="column column_about">
+						<h1 class="title title_about">
+							Hi, I'm Tudor, I aspire to be a Web Developer
+						</h1>
+						<p class="description description_about">
+							<span>
+								Hi. My name is Tudor Sfarasan. I'm 26 years old, from Cluj-Napoca, Romania. I like to think of me as a creative, intuitive person, a true team player. This year I started studying Web Developement at The Informal School of IT and made a lot of cool projects. 
+							</span>
+							<span>
+								My other hobbies are gaming, cooking and spending time with friends.
+							</span>
+						</p>
+						
+					</div><!-- end column -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div><!-- end page -->
+		<!-- end about me -->
+		<div class="page working-process" id="projects">
+			<div class="container">
+				<h1 class="title title_default">
+					Projects
+				</h1>
+				<img src="img/uranus.png" width="900px"
+							height="600px" alt="i">
+							<p class="description description_about">Uranus Final Team Project, search page</p>
+							<a href="https://github.com/angelcrisan/uranus/tree/search-page-functionality" class="button button_hm button_contacts" >Check it here</a>			
+		</div>		
+
+		<!-- working process -->
+		<div class="page working-process" id="process">
+			<div class="container">
+				<h1 class="title title_default">
+					Skills
+				</h1>
+				<div class="row row_fw-w row_jc-sp-bn row_processes">
+					<div class="process-card">
+						
+						<h1 class="card-title">HTML</h1>
+					</div><!-- end process block -->
+					<div class="process-card">
+						
+						<h1 class="card-title">CSS</h1>
+					</div><!-- end process block -->
+					<div class="process-card">
+						
+						<h1 class="card-title">JavaScript</h1>
+					</div><!-- end process block -->
+					<div class="process-card">
+					
+						<h1 class="card-title">ReactJS</h1>
+					</div><!-- end process block -->
+				</div><!-- end row -->
+		<!-- experience -->
+		<div class="page experience" id="exp">
+			<div class="container">
+				<div class="row row_fw-w row_jc-sp-bn">
+					<div class="experience-card">
+						<h1 class="card-title card-title_exp">
+							Work Experience
+						</h1>
+						<div class="experience-card__inner">
+							<h2 class="title title_exp">Biling Operator-SITA RAM SRL</h2>
+							<time class="time" datetime="2013-10-11 2014-06-10">
+								JUNE 2020 - PRESENT
+							</time>
+							<p class="description description_card">
+								Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit, sed diam nonummy nibh euismod
+								tincidunt ut laoreet dolore magna aliquam erat
+								volutpat.
+							</p>
+						</div><!-- end card line -->
+
+						<hr class="card-line">
+
+						<div class="experience-card__inner">
+							<h2 class="title title_exp">Real Estate Agent</h2>
+							<time class="time" datetime="2014-10-11 2015-06-10">
+								OCT 2018 - FEB 2020
+							</time>
+							<p class="description description_card">
+								Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit, sed diam nonummy nibh euismod
+								tincidunt ut laoreet dolore magna aliquam erat
+								volutpat.
+							</p>
+						</div><!-- end card line -->
+					</div><!-- end experience card -->
+					<div class="experience-card">
+						<h1 class="card-title card-title_exp">
+							Education
+						</h1>
+						<div class="experience-card__inner">
+							<h2 class="title title_exp">The Informal School of IT</h2>
+							<time class="time" datetime="2013-10-11 2014-06-10">
+								FEB 2020 - SEPT 2020
+							</time>
+							<p class="description description_card">
+								Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit, sed diam nonummy nibh euismod
+								tincidunt ut laoreet dolore magna aliquam erat
+								volutpat.
+							</p>
+						</div><!-- end card line -->
+
+						<hr class="card-line">
+
+						<div class="experience-card__inner">
+							<h2 class="title title_exp">Babes-Bolyai University</h2>
+							<time class="time" datetime="2014-10-11">
+								OCT 2014 - JUNE 2017
+							</time>
+							<p class="description description_card">
+								Lorem ipsum dolor sit amet, consectetuer
+								adipiscing elit, sed diam nonummy nibh euismod
+								tincidunt ut laoreet dolore magna aliquam erat
+								volutpat.
+							</p>
+						</div><!-- end card line -->
+					</div><!-- end experience card -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div><!-- end page -->
+		<!-- end experience -->
+
+		
+
+		<!-- contacts -->
+		<div class="page contacts" id="contacts">
+			<div class="container">
+				<div class="row row_jc-sp-bn row_fw-w">
+					<form id="contact-form" action="" class="form">
+						<input type="hidden" name="contact_number">
+						<h1 class="title title_contacts">Leave a message</h1>
+						<input type="text" placeholder="Name*">
+						<input type="email" placeholder="Email*">
+						<textarea name="message" class="message" placeholder="Message*"></textarea>
+						<input type="submit" value="Send" class="button button_hm button_contacts">
+							
+					</input>
+					</form>
+					
+					<div class="contacts-info">
+						<div class="column">
+							<div class="address contacts-info__inner">
+								<h1 class="title title_contacts">Address</h1>
+								<address class="contacts-text contacts-text_mt40">
+									Grigore Alexandrescu Street,nr 7, Cluj-Napoca, ap 41
+								</address>
+							</div><!-- end contacts info inner -->
+							<div class="contacts-info__inner">
+								<h1 class="title title_contacts">Phone</h1>
+								<div class="column">
+									<a href="tel: +40742862152"
+										class="contacts-text contacts-text_mt40">
+										0742862152
+									</a>
+									
+								</div>
+							</div><!-- end contacts info inner -->
+							<div class="contacts-info__inner">
+								<h1 class="title title_contacts">Web</h1>
+								<p class="contacts-text contacts-text_mt40">
+									Mail: tudor.sfarasan94@gmail.com
+								</p>
+								
+							</div><!-- end contacts info inner -->
+						</div><!-- end column -->
+					</div><!-- end contacts info -->
+				</div><!-- end row -->
+			</div><!--  container -->
+		</div><!-- end page -->
+		<!-- end contacts -->
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row row_jc-c soc">
+				<a href="https://www.facebook.com/tudor.sfarasan" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.linkedin.com/in/tudorsf/"target="_blank"  ><i class="fab fa-linkedin-in"></i></a>
+				<a href="https://www.instagram.com/tudor.sfarasan" target="_blank"><i class="fab fa-instagram"></i></a>
+				
+			</div>
+			
+		</div>
+	</footer>
+
+	<script src="js/personal.js"></script>
+</body>
+</html>
